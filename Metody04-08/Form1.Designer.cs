@@ -39,6 +39,16 @@
             this.buttonCifLichSoucet = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonJePrvosiclo = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.buttonPocetDelSud = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.buttonNejSpolDel = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonMocnina
@@ -135,11 +145,106 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Součet lichých cifer";
             // 
+            // buttonJePrvosiclo
+            // 
+            this.buttonJePrvosiclo.Location = new System.Drawing.Point(36, 178);
+            this.buttonJePrvosiclo.Name = "buttonJePrvosiclo";
+            this.buttonJePrvosiclo.Size = new System.Drawing.Size(75, 23);
+            this.buttonJePrvosiclo.TabIndex = 11;
+            this.buttonJePrvosiclo.Text = "button4";
+            this.buttonJePrvosiclo.UseVisualStyleBackColor = true;
+            this.buttonJePrvosiclo.Click += new System.EventHandler(this.buttonJePrvosiclo_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(139, 180);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 12;
+            // 
+            // buttonPocetDelSud
+            // 
+            this.buttonPocetDelSud.Location = new System.Drawing.Point(36, 226);
+            this.buttonPocetDelSud.Name = "buttonPocetDelSud";
+            this.buttonPocetDelSud.Size = new System.Drawing.Size(75, 23);
+            this.buttonPocetDelSud.TabIndex = 13;
+            this.buttonPocetDelSud.Text = "button5";
+            this.buttonPocetDelSud.UseVisualStyleBackColor = true;
+            this.buttonPocetDelSud.Click += new System.EventHandler(this.buttonPocetDelSud_Click);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(139, 228);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(136, 164);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Prvočíslo";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(136, 212);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Počet sudých dělitelů";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(136, 269);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(175, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Největší společný dělitel dvou čísel";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(139, 285);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 18;
+            // 
+            // buttonNejSpolDel
+            // 
+            this.buttonNejSpolDel.Location = new System.Drawing.Point(36, 283);
+            this.buttonNejSpolDel.Name = "buttonNejSpolDel";
+            this.buttonNejSpolDel.Size = new System.Drawing.Size(75, 23);
+            this.buttonNejSpolDel.TabIndex = 17;
+            this.buttonNejSpolDel.Text = "button6";
+            this.buttonNejSpolDel.UseVisualStyleBackColor = true;
+            this.buttonNejSpolDel.Click += new System.EventHandler(this.buttonNejSpolDel_Click);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(264, 286);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.buttonNejSpolDel);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.buttonPocetDelSud);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.buttonJePrvosiclo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.buttonCifLichSoucet);
@@ -171,6 +276,16 @@
         private System.Windows.Forms.Button buttonCifLichSoucet;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonJePrvosiclo;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button buttonPocetDelSud;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button buttonNejSpolDel;
+        private System.Windows.Forms.TextBox textBox8;
     }
 }
 

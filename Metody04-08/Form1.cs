@@ -31,5 +31,22 @@ namespace Metody04_08
         {
             MessageBox.Show("Součet lichých cifer je " + Metody.CifLichSoucet(int.Parse(textBox4.Text)));
         }
+
+        private void buttonJePrvosiclo_Click(object sender, EventArgs e)
+        {
+            bool prvociselnost = Metody.JePrvocislo(int.Parse(textBox5.Text));
+            if (prvociselnost) MessageBox.Show("Je prvočíslo");
+            else MessageBox.Show("Není prvočíslo");
+        }
+
+        private void buttonPocetDelSud_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Počet sudých dělitelů je " + Metody.PocetSudDel(int.Parse(textBox6.Text)));
+        }
+
+        private void buttonNejSpolDel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Největší společný dělitel je " + Metody.NejevetsiSpolecnyDelitel(int.Parse(textBox7.Text), int.Parse(textBox8.Text)));
+        }
     }
 }

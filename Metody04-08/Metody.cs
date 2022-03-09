@@ -50,5 +50,43 @@ namespace Metody04_08
             }
             return cifLichSoucet;
         }
+
+        static public bool JePrvocislo(int cislo)
+        {
+            int pocetDelitelu = 0;
+            for (int i = 1; i < cislo; ++i) 
+            {
+                if (cislo % i == 0) ++pocetDelitelu;
+            }
+            if (pocetDelitelu >= 2) return false;
+            else return true;
+        }
+
+        static public int PocetSudDel(int cislo)
+        {
+            int pocet = 0;
+            for (int i = 1; i <= cislo; i++)
+            {
+                if (cislo % i == 0 && i % 2 == 0) ++pocet;
+            }
+            return pocet;
+        }
+
+        static public int NejevetsiSpolecnyDelitel(int cislo,int cislo2)
+        {
+            int nejvetsiSpolDel = 1;
+            if (cislo2 < cislo)
+            {
+                int kyblik = cislo;
+                cislo = cislo2;
+                cislo2 = kyblik;
+            }
+            for (int i = 1; i <= cislo; ++i)
+            {
+                if (cislo % i == 0 && cislo2 % i == 0) nejvetsiSpolDel = i;
+            }
+            return nejvetsiSpolDel;
+        }
+            
     }
 }
