@@ -37,5 +37,18 @@ namespace Metody04_08
             }
             return faktorial;
         }
+
+        static public int CifLichSoucet(int cislo)
+        {
+            int cifLichSoucet = 0;
+            int cifra;
+            while (cislo > 0)
+            {
+                cifra = cislo % 10;
+                if (cifra % 2 != 0) cifLichSoucet += cifra;
+                cislo /= 10;
+            }
+            return cifLichSoucet;
+        }
     }
 }

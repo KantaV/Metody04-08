@@ -26,5 +26,10 @@ namespace Metody04_08
         {
             MessageBox.Show("Faktorial " + textBox3.Text + " je " + Metody.Faktorial(int.Parse(textBox3.Text)));
         }
+
+        private void buttonCifLichSoucet_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Součet lichých cifer je " + Metody.CifLichSoucet(int.Parse(textBox4.Text)));
+        }
     }
 }
