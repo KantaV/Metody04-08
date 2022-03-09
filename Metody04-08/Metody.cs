@@ -28,5 +28,14 @@ namespace Metody04_08
 
         }
 
+        static public int Faktorial(int cislo)
+        {
+            int faktorial = 1;
+            for (int i = 1; i <= cislo; ++i)
+            {
+                faktorial *= i;
+            }
+            return faktorial;
+        }
     }
 }

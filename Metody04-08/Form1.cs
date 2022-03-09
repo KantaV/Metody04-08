@@ -24,7 +24,7 @@ namespace Metody04_08
 
         private void buttonFaktorial_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Faktorial " + textBox3.Text + " je " + Metody.Faktorial(int.Parse(textBox3.Text)));
         }
     }
 }
